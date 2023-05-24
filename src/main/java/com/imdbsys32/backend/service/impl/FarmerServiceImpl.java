@@ -32,14 +32,14 @@ public class FarmerServiceImpl implements FarmerService {
     }
 
     @Override
-    public void updateFarmer(Farmer student, String studentId) {
-        Farmer farmerToUpdate = this.farmerRepository.findById(studentId).get();
+    public void updateFarmer(Farmer farmer, String farmerId) {
+        Farmer farmerToUpdate = this.farmerRepository.findById(farmerId).get();
 
-        farmerToUpdate.setFirstName(student.getFirstName());
-        farmerToUpdate.setLastName(student.getLastName());
-        farmerToUpdate.setEmail(student.getEmail());
-        farmerToUpdate.setAddress(student.getAddress());
-        farmerToUpdate.setContactNumber(student.getContactNumber());
+        farmerToUpdate.setFirstName(farmer.getFirstName());
+        farmerToUpdate.setLastName(farmer.getLastName());
+        farmerToUpdate.setEmail(farmer.getEmail());
+        farmerToUpdate.setAddress(farmer.getAddress());
+        farmerToUpdate.setContactNumber(farmer.getContactNumber());
 
         this.farmerRepository.save(farmerToUpdate);
     }
