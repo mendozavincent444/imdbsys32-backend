@@ -2,7 +2,6 @@ package com.imdbsys32.backend.controller;
 
 import com.imdbsys32.backend.model.Farmer;
 import com.imdbsys32.backend.service.FarmerService;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
