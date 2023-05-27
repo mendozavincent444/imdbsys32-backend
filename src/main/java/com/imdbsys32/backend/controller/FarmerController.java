@@ -40,7 +40,7 @@ public class FarmerController {
 
         this.farmerService.deleteFarmer(farmerId);
 
-        return new ResponseEntity<>("Deleted successfully", HttpStatus.OK);
+        return new ResponseEntity<>("Farmer deleted successfully.", HttpStatus.OK);
     }
 
 
@@ -49,7 +49,7 @@ public class FarmerController {
 
         this.farmerService.updateFarmer(farmer, farmerId);
 
-        return new ResponseEntity<>("Updated successfully", HttpStatus.OK);
+        return new ResponseEntity<>("Farmer updated successfully.", HttpStatus.OK);
     }
 
     @GetMapping("/search")
