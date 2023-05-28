@@ -19,10 +19,10 @@ public class TaskController {
     }
 
     @PostMapping
-    public ResponseEntity<Void> storeTask(@RequestBody Task task) {
+    public ResponseEntity<String> storeTask(@RequestBody Task task) {
         this.taskService.storeTask(task);
 
-        return new ResponseEntity<>(null, HttpStatus.CREATED);
+        return new ResponseEntity<>("Task added successfully.", HttpStatus.CREATED);
     }
 
     @GetMapping

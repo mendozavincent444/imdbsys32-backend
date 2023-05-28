@@ -18,8 +18,8 @@ public class FarmerServiceImpl implements FarmerService {
     }
 
     @Override
-    public String saveFarmer(Farmer farmer) {
-        return this.farmerRepository.save(farmer).getId();
+    public void saveFarmer(Farmer farmer) {
+        this.farmerRepository.save(farmer);
     }
 
     @Override

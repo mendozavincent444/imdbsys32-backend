@@ -22,9 +22,9 @@ public class FarmerController {
 
     @PostMapping
     public ResponseEntity<String> addFarmer(@RequestBody Farmer farmer) {
-        String createdFarmerId = this.farmerService.saveFarmer(farmer);
+        this.farmerService.saveFarmer(farmer);
 
-        return new ResponseEntity<>(createdFarmerId, HttpStatus.CREATED);
+        return new ResponseEntity<>("Farmer added successfully.", HttpStatus.CREATED);
     }
 
     @GetMapping

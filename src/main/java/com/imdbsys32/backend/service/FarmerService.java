@@ -5,7 +5,7 @@ import com.imdbsys32.backend.model.Farmer;
 import java.util.List;
 
 public interface FarmerService {
-    public String saveFarmer(Farmer farmer);
+    public void saveFarmer(Farmer farmer);
 
     public List<Farmer> getFarmers();
 
